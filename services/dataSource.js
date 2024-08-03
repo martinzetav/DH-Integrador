@@ -8,7 +8,6 @@ const dataSource = {
     },
     save(filePath, data){
         const newJsonData = JSON.stringify(data);
-        // const jsonData = fs.readFileSync(filePath, "utf-8");
         fs.writeFileSync(filePath, newJsonData);
     }
 }
