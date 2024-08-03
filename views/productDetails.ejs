@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head") %>
+<body>
+    <%- include("./partials/header") %>
+    <main>
+        <h2 class="category-title"><%= category.toUpperCase() %></h2>
+        <section class="products-section">
+            <% productsByCategory.forEach(prod => { %>
+                <a href="/product/<%= prod.id %>" class="product-link">
+                    <article class="product">
+                        <img src="/images/<%= prod.image %>" alt="<%= prod.name %>">
+                        <h2><%= prod.name %></h2>
+                        <p>$<%= prod.price %></p>
+                    </article>
+                </a>
+            <% }) %>
+        </section>
+    </main>
+    <%- include("./partials/footer") %>
+</body>
+</html>
