@@ -8,6 +8,10 @@ app.use(express.static("public"));
 // Config. de Templates Engines
 app.set("view engine", "ejs");
 
+//Config. para capturar datos mediante POST
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 const mainRoutes = require("./routes/main");
 const userRoutes = require("./routes/user");
 const productsRoutes = require("./routes/products");
