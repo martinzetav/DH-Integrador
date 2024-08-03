@@ -10,9 +10,11 @@ app.set("view engine", "ejs");
 
 const mainRoutes = require("./routes/main");
 const userRoutes = require("./routes/user");
+const productsRoutes = require("./routes/products");
 
 app.use("/", mainRoutes);
 app.use("/users", userRoutes);
+app.use("/products", productsRoutes);
 
 
 
