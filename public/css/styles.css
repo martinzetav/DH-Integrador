@@ -233,11 +233,13 @@ button[type="submit"]:hover {
 /* Estilos para la sección de detalle del producto */
 .product-detail-section {
     max-width: 1200px;
-    margin: 50px auto;
+    margin: 50px auto; /* Espaciado vertical automático */
     padding: 20px;
     background: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
+    margin-top: 50px; /* Ajusta este valor según sea necesario */
+    margin-bottom: 100px; /* Ajusta este valor según sea necesario */
 }
 
 .product-detail-container {
