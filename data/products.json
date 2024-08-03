@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Zapatillas Topper Cover V",
-        "color": "gris",
+        "color": "Gris",
         "size": "42",
         "category": "calzados",
         "description": "Presentamos la quinta edición del modelo COVER. Un calzado desarrollado para jugadores exigentes que necesitan un calzado robusto para asegurar estabilidad y rendimiento.",
@@ -12,7 +12,7 @@
     {
         "id": 2,
         "name": "Remera Nike Just Do It",
-        "color": "amarillo",
+        "color": "Amarillo",
         "size": "L",
         "category": "remeras",
         "description": "Confeccionada con algodón suave y ligero en un ajuste relajado para brindar un confort informal para todos los días, esta exclusiva playera Nike pone nuestras tres palabras de aliento favoritas en el frente y al centro.",
@@ -22,7 +22,7 @@
     {
         "id": 3,
         "name": "Gorra Heritage Topper",
-        "color": "azul",
+        "color": "Azul",
         "size": "Única",
         "category": "accesorios",
         "description": "Gorra casual de visera curva. Posee 5 paneles. Cierre plastico trasero ajustable a presión Tela: 100% Algodón",
@@ -32,7 +32,7 @@
     {
         "id": 4,
         "name": "Short Nike Performance Swoosh",
-        "color": "negro",
+        "color": "Negro",
         "size": "M",
         "category": "shorts",
         "description": "El short Nike Performance le da un giro retro a un estilo clásico. El forro de malla y el ajuste amplio brindan una sensación fresca y un estilo relajado que llega a la mitad del muslo.",
@@ -42,7 +42,7 @@
     {
         "id": 5,
         "name": "Zapatillas Nike Revolution 6",
-        "color": "azul",
+        "color": "Azul",
         "size": "44",
         "category": "calzados",
         "description": "Por nuevos desafíos en el pavimento. Atate los cordones 100% recicladas y marca el ritmo al comienzo de tu experiencia de running con la sensación de suavidad del Nike Revolution 6. Sabemos que la comodidad es la clave de una carrera exitosa, así que nos aseguramos de que tus pasos sean amortiguados y flexibles para brindar una pisada suave. Es la evolución de un favorito, con un diseño transpirable confeccionado con al menos un 20% de contenido reciclado por peso.",
@@ -52,7 +52,7 @@
     {
         "id": 6,
         "name": "Camiseta Deportiva FRACTAL",
-        "color": "azul",
+        "color": "Azul",
         "size": "L",
         "category": "remeras",
         "description": "Camiseta deportiva de secado rápido.",
@@ -62,7 +62,7 @@
     {
         "id": 7,
         "name": "Gorra Nike Dri-Fit Club",
-        "color": "azul",
+        "color": "Azul",
         "size": "Unico",
         "category": "accesorios",
         "description": "Abre las puertas del Club Cap. La corona estructurada de profundidad media te hace sentir cómodo y seguro. La tela absorbente de sudor te ayuda a mantenerte seco y un cierre de triple deslizamiento asegura que estés listo para pasar de una actividad a la siguiente con un ajuste perfecto.",
@@ -72,7 +72,7 @@
     {
         "id": 8,
         "name": "Short Puma Run Favorite Velocity",
-        "color": "celeste",
+        "color": "Celeste",
         "size": "L",
         "category": "shorts",
         "description": "Los shorts Run Favourite están aquí para ayudarte a alcanzar el máximo rendimiento. El pantalón corto incorpora tecnología que absorbe la humedad para mantenerte seco, tiene gráficos reflectantes para mejorar la seguridad y una inserción de malla para mejorar la transpirabilidad.",
@@ -82,7 +82,7 @@
     {
         "id": 9,
         "name": "Zapatillas Puma Disperse XT 3",
-        "color": "rosa",
+        "color": "Rosa",
         "size": "38",
         "category": "calzados",
         "description": "Puma Disperse Xt 3, la última actualización de una línea en el nexo de rendimiento y diseño",
@@ -92,7 +92,7 @@
     {
         "id": 10,
         "name": "Remera Puma Essentials Logo",
-        "color": "verde",
+        "color": "Verde",
         "size": "L",
         "category": "remeras",
         "description": "Revive tu estilo con esta remera llamativa. Es audaz y brillante. Te garantizamos que con ella atraerás todas las miradas",
@@ -102,7 +102,7 @@
     {
         "id": 11,
         "name": "Gorra Puma Classics Archive Logo",
-        "color": "rosa",
+        "color": "Rosa",
         "size": "Unico",
         "category": "accesorios",
         "description": "Esta gorra clásica de béisbol de seis paneles se ve tan bien como se siente. Con ojales bordados, un ajustador de metal plateado en forma de D y el emblemático logotipo PUMA Archive No. 1 al frente, esta gorra seguramente se convertirá en tu favorita.",
@@ -112,7 +112,7 @@
     {
         "id": 12,
         "name": "Gorra Running x Adizero HEAT.RDY Liviana adidas",
-        "color": "negra",
+        "color": "Negro",
         "size": "Unico",
         "category": "accesorios",
         "description": "Competí como nunca con esta gorra de running adidas HEAT.RDY. Su estructura liviana no se interpone en tu camino, y la ventilación cortada a láser se encarga de que el sudor no interrumpa tu rutina. La correa en la parte posterior ayuda a conseguir un ajuste perfecto. Podés subir la visera o bajarla para protegerte de los rayos del sol. Hecho con al menos un 70 % de contenido reciclado, este producto representa solo una de nuestras soluciones para ayudar a ponerle fin a la contaminación por plástico.",
@@ -122,7 +122,7 @@
     {
         "id": 13,
         "name": "Remera Topper Mc Brd",
-        "color": "gris",
+        "color": "Gris",
         "size": "L",
         "category": "remeras",
         "description": "La Remera Urbana Topper Brand es una prenda versátil y básica que puede complementar cualquier armario. Su diseño liso y cuello la hacen fácil de combinar con diferentes estilos redondos y ocasiones.",
@@ -132,7 +132,7 @@
     {
         "id": 14,
         "name": "Short Topper Poly",
-        "color": "azul",
+        "color": "Azul",
         "size": "L",
         "category": "shorts",
         "description": "Punto con tajos laterales y cordón de ajuste. Logo a contratono. Tela: Interlock de microfibra de poliéster.",
@@ -142,7 +142,7 @@
     {
         "id": 15,
         "name": "Shorts de Running Adizero Essentials adidas",
-        "color": "negro",
+        "color": "Negro",
         "size": "L",
         "category": "shorts",
         "description": "Al final de cada carrera, conocerás un poco más sobre vos. Descubrí quién sos mientras corres con los shorts de running Adizero Essentials, una prenda supersuave diseñada para brindarte libertad de movimiento. Enfrentate al asfalto con estos shorts de running atemporales que se adaptan a tus mejores metas. Su tejido ligero maximiza tu rendimiento y la tecnología de absorción AEROREADY se encarga del sudor. Para garantizar la máxima comodidad, esta prenda esencial está diseñada con una malla interior y aberturas laterales para una sensación fresca y relajada. Hecho con una serie de materiales reciclados, este producto representa solo una de nuestras soluciones para acabar con los residuos plásticos.",
