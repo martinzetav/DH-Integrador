@@ -1,6 +1,10 @@
+const dataSource = require("../services/dataSource");
+
 const mainController = {
-    getIndex(req, res){
-        res.render("index");
+    products: null,
+    getProductsAll(req, res){
+        this.products = dataSource.load();
+        res.render("index", { products });
     }
 }
 
