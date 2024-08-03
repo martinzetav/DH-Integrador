@@ -4,9 +4,12 @@
 <body>
     <%- include("./partials/header") %>
     <main>
+        <% if(locals.category){%>
+            <h2 class="category-title"><%= category.toUpperCase() %></h2>
+        <%} %>
         <section class="products-section">
             <% products.forEach(prod => { %>
-                <a href="/product/<%= prod.id %>" class="product-link">
+                <a href="/products/details/<%= prod.id %>" class="product-link">
                     <article class="product">
                         <img src="/images/<%= prod.image %>" alt="<%= prod.name %>">
                         <h2 class="product-name"><%= prod.name %></h2>

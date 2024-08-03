@@ -4,17 +4,19 @@
 <body>
     <%- include("./partials/header") %>
     <main>
-        <h2 class="category-title"><%= category.toUpperCase() %></h2>
-        <section class="products-section">
-            <% productsByCategory.forEach(prod => { %>
-                <a href="/product/<%= prod.id %>" class="product-link">
-                    <article class="product">
-                        <img src="/images/<%= prod.image %>" alt="<%= prod.name %>">
-                        <h2><%= prod.name %></h2>
-                        <p>$<%= prod.price %></p>
-                    </article>
-                </a>
-            <% }) %>
+        <section class="product-detail-section">
+            <div class="product-detail-container">
+                <div class="product-image">
+                    <img src="/images/<%= product.image %>" alt="<%= product.name %>">
+                </div>
+                <div class="product-info">
+                    <h1 class="product-name"><%= product.name %></h1>
+                    <p class="product-color">Color: <%= product.color %></p>
+                    <p class="product-size">Talle: <%= product.size %></p>
+                    <p class="product-description"><%= product.description %></p>
+                    <p class="product-price">$<%= product.price %></p>
+                </div>
+            </div>
         </section>
     </main>
     <%- include("./partials/footer") %>
