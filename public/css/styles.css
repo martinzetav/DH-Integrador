@@ -166,7 +166,79 @@ button[type="submit"]:hover {
     background: #555;
 }
 
+/* Estilos para la sección de productos */
+.category-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+    color: #333;
+}
+
+.products-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.product-link {
+    text-decoration: none;
+}
+
+.product {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.product:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #333;
+    display: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.product p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: #555;
+    font-size: 1.1em;
+    color: green;
+}
+
+.product:hover h2 {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Media queries */
+@media screen and (max-width: 768px) {
+    .product h2 {
+        display: block;
+    }
+}
+
 @media screen and (min-width: 481px) {
     .navbar {
         flex-direction: row;
@@ -200,6 +272,10 @@ button[type="submit"]:hover {
 
     #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
+    }
+    
+    .products-section {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 

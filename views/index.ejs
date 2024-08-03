@@ -4,8 +4,20 @@
 <body>
     <%- include("./partials/header") %>
     <main>
-        
+        <section class="products-section">
+            <% products.forEach(prod => { %>
+                <a href="/product/<%= prod.id %>" class="product-link">
+                    <article class="product">
+                        <img src="/images/<%= prod.image %>" alt="<%= prod.name %>">
+                        <h2 class="product-name"><%= prod.name %></h2>
+                        <p class="product-price">$<%= prod.price %></p>
+                    </article>
+                </a>
+            <% }) %>
+        </section>
     </main>
+    
+    
     
     <%- include("./partials/footer") %>
 </body>
