@@ -20,7 +20,10 @@ const userController = {
         }
         this.users.push(newUser);
         dataSource.save(usersFilePath, this.users);
-        res.redirect("/");
+        res.redirect("login");
+    },
+    getLoginForm(req, res){
+        res.render("login");
     }
 }
 
