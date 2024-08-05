@@ -3,7 +3,12 @@ const fs = require("node:fs");
 const dataSource = {
     load(filePath){
         const jsonData = fs.readFileSync(filePath, "utf-8");
-        const data = JSON.parse(jsonData);
+        let data;
+        if(jsonData.trim() == ""){
+            data = [];
+        }else{
+            data = JSON.parse(jsonData)
+        }
         return data;
     },
     save(filePath, data){
