@@ -9,28 +9,32 @@
                 <form action="/users/register" method="POST">
                         <div class="form-group">
                             <label for="first-name">Nombres</label>
-                            <input type="text" id="first-name" name="firstName">
+                            <input type="text" id="first-name" name="firstName"
+                            value="<%= locals.oldData ? oldData.firstName : null %>">
                             <% if (locals.errors && errors.firstName) { %>
                             <p><%= errors.firstName.msg %></p>
                             <% } %>
                         </div>
                         <div class="form-group">
                             <label for="last-name">Apellidos</label>
-                            <input type="text" id="last-name" name="lastName">
+                            <input type="text" id="last-name" name="lastName" 
+                            value="<%= locals.oldData ? oldData.lastName : null %>">
                             <% if (locals.errors && errors.lastName) { %>
                                 <p><%= errors.lastName.msg %></p>
                             <% } %>
                         </div>
                         <div class="form-group">
                             <label for="phone">Teléfono</label>
-                            <input type="tel" id="phone" name="phone">
+                            <input type="tel" id="phone" name="phone"
+                            value="<%= locals.oldData ? oldData.phone : null %>">
                             <% if (locals.errors && errors.phone) { %>
                                 <p><%= errors.phone.msg %></p>
                             <% } %>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email"
+                            value="<%= locals.oldData ? oldData.email : null %>">
                             <% if (locals.errors && errors.email) { %>
                                 <p><%= errors.email.msg %></p>
                             <% } %>

@@ -26,7 +26,7 @@ const userController = {
             dataSource.save(usersFilePath, this.users);
             res.redirect("login");
         }else{
-            res.render("register", {errors: errors.mapped()});
+            res.render("register", {errors: errors.mapped(), oldData: req.body});
         }
     },
     getLoginForm(req, res){
