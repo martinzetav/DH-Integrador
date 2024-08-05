@@ -30,8 +30,14 @@ const User = {
         }
         allUsers.push(newUser);
         dataSource.save(usersFilePath, allUsers);
+        return newUser;
+    },
+    deleteById(id){
+        const allUsers = this.findAll();
+        const finalUsers = allUsers.filter(user => user.id != id);
+        dataSource.save(usersFilePath, finalUsers);
         return true;
     }
 }
 
-// console.log(User.create({"nombre": "martin", "phone": 83792739}));
+module.exports = User;
