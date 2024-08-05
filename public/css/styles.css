@@ -124,6 +124,12 @@ header {
     margin-bottom: 15px;
 }
 
+.form-group p {
+    color: red; /* Color rojo para los mensajes de error */
+    font-size: 0.9em; /* Tamaño de letra más pequeño que el de los labels */
+    margin-top: 5px; /* Espaciado superior para separar del input */
+}
+
 .form-group label {
     display: block;
     margin-bottom: 5px;
