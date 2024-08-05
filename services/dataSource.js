@@ -12,7 +12,7 @@ const dataSource = {
         return data;
     },
     save(filePath, data){
-        const newJsonData = JSON.stringify(data);
+        const newJsonData = JSON.stringify(data, null, " ");
         fs.writeFileSync(filePath, newJsonData);
     }
 }
