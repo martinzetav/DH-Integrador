@@ -4,7 +4,7 @@ const { validationResult } = require("express-validator");
 const usersFilePath = path.join(__dirname, '../data/users.json')
 
 const userController = {
-    usersJSON: null,
+    users: null,
     getRegisterForm(req, res){
         res.render("register");
     },
