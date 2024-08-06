@@ -9,11 +9,18 @@
             <form action="/users/login" method="POST">
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required
+                    value="<%= locals.oldData && oldData.email ? oldData.email : null %>">
+                    <% if (locals.errors && errors.email) { %>
+                        <p><%= errors.email.msg %></p>
+                    <% } %>
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
                     <input type="password" id="password" name="password" required>
+                    <% if (locals.errors && errors.password) { %>
+                        <p><%= errors.password.msg %></p>
+                    <% } %>
                 </div>
                 <div class="form-group-remember">
                     <input type="checkbox" id="remember-me" name="rememberMe">

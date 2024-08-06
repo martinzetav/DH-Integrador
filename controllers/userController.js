@@ -8,7 +8,7 @@ const usersFilePath = path.join(__dirname, '../data/users.json')
 const userController = {
     users: null,
     getRegisterForm(req, res){
-        res.render("register");
+        return res.render("register");
     },
     createUser(req, res){
         const errors = validationResult(req);
@@ -38,13 +38,41 @@ const userController = {
             const userCreated = User.create(newUser);
             // this.users.push(newUser);
             // dataSource.save(usersFilePath, this.users);
-            res.redirect("login");
+            return res.redirect("login");
         }else{
-            res.render("register", {errors: errors.mapped(), oldData: req.body});
+            return res.render("register", {errors: errors.mapped(), oldData: req.body});
         }
     },
     getLoginForm(req, res){
         res.render("login");
+    },
+    loginProcess(req, res){
+        const { email, password } = req.body;
+        const userToLogin = User.findByField("email", email);
+        if(userToLogin){
+            const isOkThePassword = bcryptjs.compareSync(password, userToLogin.password);
+            if(isOkThePassword){
+                return res.redirect("/");
+            }else{
+                return res.render("login", {
+                    errors:{
+                        password: {
+                            msg: "La contraseña que ingresaste es incorrecta"
+                        }
+                    },
+                    oldData: req.body
+                })
+            }
+        }else{
+            return res.render("login", {
+                errors:{
+                    email: {
+                        msg: "Este email no se encuentra registrado"
+                    }
+                },
+                oldData: req.body
+            })
+        }
     }
 }
 
