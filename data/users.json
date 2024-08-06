@@ -78,5 +78,13 @@
   "phone": "555-5678",
   "email": "hank.clark@example.com",
   "password": "password107"
+ },
+ {
+  "id": 11,
+  "firstName": "martin",
+  "lastName": "zalazar",
+  "phone": "3872932789",
+  "email": "martin@gmail.com",
+  "password": "$2a$10$HayA30VzxYm0C5AaLCPfzu540UGlpFS3TTheuxyuL2BSUPFaGU0Gq"
  }
 ]

@@ -3,6 +3,7 @@ const path = require("node:path");
 const dataSource = require("../services/dataSource");
 const User = require("../models/User");
 const { validationResult } = require("express-validator");
+const { log } = require("node:console");
 const usersFilePath = path.join(__dirname, '../data/users.json')
 
 const userController = {
@@ -52,7 +53,9 @@ const userController = {
         if(userToLogin){
             const isOkThePassword = bcryptjs.compareSync(password, userToLogin.password);
             if(isOkThePassword){
-                return res.redirect("/");
+                delete userToLogin.password;
+                req.session.userLogged = userToLogin;
+                return res.redirect("/users/profile");
             }else{
                 return res.render("login", {
                     errors:{
@@ -73,6 +76,9 @@ const userController = {
                 oldData: req.body
             })
         }
+    },
+    getUserProfile(req, res){
+        return res.render("userProfile", {user: req.session.userLogged});
     }
 }
 

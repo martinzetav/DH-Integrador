@@ -8,6 +8,7 @@ router.get("/register", userController.getRegisterForm);
 router.post("/register", userValidationRules, userController.createUser);
 router.get("/login", userController.getLoginForm);
 router.post("/login", userController.loginProcess);
+router.get("/profile", userController.getUserProfile);
 
 
 module.exports = router;
