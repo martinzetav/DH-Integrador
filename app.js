@@ -1,11 +1,15 @@
 const express = require("express");
 const session = require("express-session");
+const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 
-    app.use(session({
-        secret: "Shh, It´s a secret"
-    }));
+app.use(session({
+    secret: "Shh, It´s a secret"
+}));
+
+// MiddleWare para pasar la session a las vistas
+app.use(userLoggedMiddleware);
 
 // Config. de archivos estaticos en la carpeta public
 app.use(express.static("public"));
