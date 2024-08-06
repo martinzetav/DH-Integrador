@@ -3,7 +3,6 @@ const path = require("node:path");
 const dataSource = require("../services/dataSource");
 const User = require("../models/User");
 const { validationResult } = require("express-validator");
-const { log } = require("node:console");
 const usersFilePath = path.join(__dirname, '../data/users.json')
 
 const userController = {
@@ -48,13 +47,16 @@ const userController = {
         res.render("login");
     },
     loginProcess(req, res){
-        const { email, password } = req.body;
+        const { email, password, rememberMe } = req.body;
         const userToLogin = User.findByField("email", email);
         if(userToLogin){
             const isOkThePassword = bcryptjs.compareSync(password, userToLogin.password);
             if(isOkThePassword){
                 delete userToLogin.password;
                 req.session.userLogged = userToLogin;
+                if(rememberMe){
+                    res.cookie("userEmail", email, { maxAge: (1000*60) * 2 });
+                }
                 return res.redirect("/users/profile");
             }else{
                 return res.render("login", {
@@ -81,8 +83,9 @@ const userController = {
         return res.render("userProfile", {user: req.session.userLogged});
     },
     logout(req, res){
+        res.clearCookie("userEmail");
         req.session.destroy();
-        res.redirect("/users/login");
+        return res.redirect("/users/login");
     }
 }
 
