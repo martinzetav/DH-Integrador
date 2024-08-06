@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include("./partials/head") %>
+<body>
+    <%- include("./partials/header") %>
+    <main>
+        <section class="profile-section">
+            <div class="profile-container">
+                <div class="profile-image">
+                    <img src="/images/" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h2>Bienvenido <%= user.firstName.toUpperCase() %> <%= user.lastName.toUpperCase() %></h2>
+                    <p>Nombres: <%= user.firstName %></p>
+                    <p>Apellidos: <%= user.lastName %></p>
+                    <p>Email: <%= user.email %></p>
+                    <p>Teléfono: <%= user.phone %></p>
+                    <p>Contraseña: ********</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <%- include("./partials/footer") %>
+</body>
+</html>
