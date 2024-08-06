@@ -1,5 +1,6 @@
 const express = require("express");
 const session = require("express-session");
+const cookieParser = require("cookie-parser");
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 const app = express();
 const PORT = process.env.PORT ?? 3000;
@@ -7,6 +8,8 @@ const PORT = process.env.PORT ?? 3000;
 app.use(session({
     secret: "Shh, It´s a secret"
 }));
+
+app.use(cookieParser());
 
 // MiddleWare para pasar la session a las vistas
 app.use(userLoggedMiddleware);
