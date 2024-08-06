@@ -11,6 +11,7 @@ router.post("/register", userValidationRules, userController.createUser);
 router.get("/login", guestMiddleware, userController.getLoginForm);
 router.post("/login", userController.loginProcess);
 router.get("/profile", authMiddleware, userController.getUserProfile);
+router.post("/logout", userController.logout);
 
 
 module.exports = router;

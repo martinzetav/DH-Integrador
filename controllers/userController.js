@@ -79,6 +79,10 @@ const userController = {
     },
     getUserProfile(req, res){
         return res.render("userProfile", {user: req.session.userLogged});
+    },
+    logout(req, res){
+        req.session.destroy();
+        res.redirect("/users/login");
     }
 }
 
