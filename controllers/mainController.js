@@ -1,12 +1,10 @@
-const path = require("node:path");
-const dataSource = require("../services/dataSource");
-const productsFilePath = path.join(__dirname, '../data/products.json')
+const Product = require("../models/Product");
 
 const mainController = {
     products: null,
     getProductsAll(req, res){
-        this.products = dataSource.load(productsFilePath);
-        res.render("index", { products });
+        this.products = Product.findAll();
+        res.render("index", { products: this.products });
     }
 }
 
