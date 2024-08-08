@@ -1,11 +1,12 @@
 [
  {
   "id": 1,
-  "firstName": "John",
-  "lastName": "Doe",
+  "firstName": "admin",
+  "lastName": "admin",
   "phone": "555-1234",
   "email": "john.doe@example.com",
-  "password": "password123"
+  "password": "password123",
+  "rol": "admin"
  },
  {
   "id": 2,
@@ -13,7 +14,8 @@
   "lastName": "Smith",
   "phone": "555-5678",
   "email": "jane.smith@example.com",
-  "password": "password456"
+  "password": "password456",
+  "rol": ""
  },
  {
   "id": 3,
@@ -21,7 +23,8 @@
   "lastName": "Johnson",
   "phone": "555-9101",
   "email": "alice.johnson@example.com",
-  "password": "password789"
+  "password": "password789",
+  "rol": ""
  },
  {
   "id": 4,
@@ -29,7 +32,8 @@
   "lastName": "Williams",
   "phone": "555-1121",
   "email": "bob.williams@example.com",
-  "password": "password101"
+  "password": "password101",
+  "rol": ""
  },
  {
   "id": 5,
@@ -37,7 +41,8 @@
   "lastName": "Brown",
   "phone": "555-3141",
   "email": "charlie.brown@example.com",
-  "password": "password102"
+  "password": "password102",
+  "rol": ""
  },
  {
   "id": 6,
@@ -45,7 +50,8 @@
   "lastName": "Jones",
   "phone": "555-5161",
   "email": "david.jones@example.com",
-  "password": "password103"
+  "password": "password103",
+  "rol": ""
  },
  {
   "id": 7,
@@ -53,7 +59,8 @@
   "lastName": "Garcia",
   "phone": "555-7181",
   "email": "emma.garcia@example.com",
-  "password": "password104"
+  "password": "password104",
+  "rol": ""
  },
  {
   "id": 8,
@@ -61,7 +68,8 @@
   "lastName": "Martinez",
   "phone": "555-9201",
   "email": "frank.martinez@example.com",
-  "password": "password105"
+  "password": "password105",
+  "rol": ""
  },
  {
   "id": 9,
@@ -69,7 +77,8 @@
   "lastName": "Lee",
   "phone": "555-1234",
   "email": "grace.lee@example.com",
-  "password": "password106"
+  "password": "password106",
+  "rol": ""
  },
  {
   "id": 10,
@@ -77,7 +86,8 @@
   "lastName": "Clark",
   "phone": "555-5678",
   "email": "hank.clark@example.com",
-  "password": "password107"
+  "password": "password107",
+  "rol": ""
  },
  {
   "id": 11,
@@ -85,6 +95,15 @@
   "lastName": "zalazar",
   "phone": "3872932789",
   "email": "martin@gmail.com",
-  "password": "$2a$10$HayA30VzxYm0C5AaLCPfzu540UGlpFS3TTheuxyuL2BSUPFaGU0Gq"
+  "password": "$2a$10$HayA30VzxYm0C5AaLCPfzu540UGlpFS3TTheuxyuL2BSUPFaGU0Gq",
+  "rol": "admin"
+ },
+ {
+  "id": 12,
+  "firstName": "lucas",
+  "lastName": "aguero",
+  "phone": "732389372",
+  "email": "lucas@gmail.com",
+  "password": "$2a$10$Ex5mf9bXmI.rZUVyX8/Dd.kwM.wTgUzfCFXQTOMF8I5HmnsAn5vrS"
  }
 ]
