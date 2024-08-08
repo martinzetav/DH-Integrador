@@ -15,6 +15,13 @@
                     <p class="product-size">Talle: <%= product.size %></p>
                     <p class="product-description"><%= product.description %></p>
                     <p class="product-price">$<%= product.price %></p>
+                    <div class="product-buttons">
+                        <button class="btn btn-add-to-cart">Agregar al carrito</button>
+                        <% if (isAdmin) { %>
+                            <button class="btn btn-edit">Editar</button>
+                            <button class="btn btn-delete">Eliminar</button>
+                        <% } %>
+                    </div>
                 </div>
             </div>
         </section>

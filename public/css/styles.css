@@ -289,6 +289,52 @@ button[type="submit"]:hover {
     font-size: 1.5em;
 }
 
+/* Añade esto al final de tu archivo styles.css */
+
+/* Estilos para los botones de producto */
+.product-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-add-to-cart {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.btn-add-to-cart:hover {
+    background-color: #218838;
+}
+
+.btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-edit:hover {
+    background-color: #e0a800;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+
 /* Media queries */
 @media screen and (min-width: 481px) {
     .navbar {
