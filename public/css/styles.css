@@ -113,6 +113,11 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
 }
+.form-section form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
 
 .form-section h1 {
     margin-bottom: 20px;
