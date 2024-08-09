@@ -20,6 +20,24 @@ const productController = {
         this.products = Product.findAll();
         const product = this.products.find(prod => prod.id == id);
         return res.render("productEditForm.ejs", {product});
+    },
+    updateProduct(req, res){
+        const {id} = req.params;
+        const {name, color, size, category, description, price} = req.body;
+        const newImage = req.file ? req.file.filename : null;
+        const product = {
+            name,
+            color,
+            size,
+            category,
+            description,
+            price,
+            image: newImage
+        }
+
+        Product.editProduct(id, product);
+        res.redirect(`/products/details/${id}`);
+        
     }
 }
 
