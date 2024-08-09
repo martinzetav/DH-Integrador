@@ -1,6 +1,7 @@
 const express = require("express");
 const session = require("express-session");
 const cookieParser = require("cookie-parser");
+const methodOverride = require("method-override");
 const userLoggedMiddleware = require("./middlewares/userLoggedMiddleware");
 const app = express();
 const PORT = process.env.PORT ?? 3000;
@@ -23,6 +24,9 @@ app.set("view engine", "ejs");
 //Config. para capturar datos mediante POST
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+//Config. para los metodos PUT y DELETE
+app.use(methodOverride("_method"));
 
 const mainRoutes = require("./routes/main");
 const userRoutes = require("./routes/user");
