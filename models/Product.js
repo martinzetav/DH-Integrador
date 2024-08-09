@@ -36,6 +36,22 @@ const Product = {
         const finalProducts = allProducts.filter(prod => prod.id != id);
         dataSource.save(productsFilePath, finalProducts);
         return true;
+    },
+    editProduct(id, product){
+        const allProducts = this.findAll();
+        allProducts.forEach(prod => {
+            if(prod.id == id){
+                prod.name = product.name;
+                prod.color = product.color;
+                prod.size = product.size;
+                prod.category = product.category;
+                prod.description = product.description;
+                prod.price = product.price;
+                prod.image = product.image ? product.image : prod.image;
+            }
+        });
+        dataSource.save(productsFilePath, allProducts);
+        return true;
     }
 }
 
