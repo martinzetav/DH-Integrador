@@ -16,7 +16,10 @@ const productController = {
         return res.render("productDetails", {product});
     },
     getEditProductForm(req, res){
-        return res.render("productEditForm.ejs");
+        const {id} = req.params;
+        this.products = Product.findAll();
+        const product = this.products.find(prod => prod.id == id);
+        return res.render("productEditForm.ejs", {product});
     }
 }
 
